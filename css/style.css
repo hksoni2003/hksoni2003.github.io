@@ -215,3 +215,26 @@ grid-template-columns:1fr;
 }
 
 }
+
+.diagram{
+width:100%;
+overflow-x:auto;
+margin-top:30px;
+}
+
+
+.card h3{
+margin-top:0;
+}
+
+@media (max-width:768px){
+
+.container{
+padding:25px;
+}
+
+.card{
+padding:20px;
+}
+
+}
