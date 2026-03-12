@@ -15,6 +15,8 @@ font-family:Arial, Helvetica, sans-serif;
 background:#f4f4f4;
 }
 
+/* HERO */
+
 .hero{
 height:420px;
 background-image:url("images/20180116_160716.jpg");
@@ -44,7 +46,7 @@ z-index:1;
 }
 
 .hero h1{
-font-size:48px;
+font-size:46px;
 margin:0;
 }
 
@@ -52,6 +54,8 @@ margin:0;
 font-size:20px;
 margin-top:10px;
 }
+
+/* NAVIGATION */
 
 nav{
 background:#0b3d5c;
@@ -70,6 +74,8 @@ nav a:hover{
 text-decoration:underline;
 }
 
+/* PAGE STRUCTURE */
+
 .container{
 max-width:1000px;
 margin:auto;
@@ -86,6 +92,11 @@ gap:25px;
 background:white;
 padding:25px;
 box-shadow:0px 2px 6px rgba(0,0,0,0.1);
+transition:transform 0.4s;
+}
+
+.card:hover{
+transform:translateY(-6px);
 }
 
 .card img{
@@ -102,6 +113,46 @@ flex-wrap:wrap;
 .profile img{
 width:200px;
 border-radius:8px;
+}
+
+/* RESEARCH SNAPSHOT ANIMATION */
+
+.fade-in{
+opacity:0;
+transform:translateY(20px);
+animation:fadeUp 1s forwards;
+}
+
+.fade-in:nth-child(2){animation-delay:0.2s;}
+.fade-in:nth-child(3){animation-delay:0.4s;}
+.fade-in:nth-child(4){animation-delay:0.6s;}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* SCROLLING PUBLICATION */
+
+.scroll-box{
+background:#0b3d5c;
+color:white;
+padding:15px;
+overflow:hidden;
+white-space:nowrap;
+}
+
+.scroll-text{
+display:inline-block;
+padding-left:100%;
+animation:scrollLeft 25s linear infinite;
+}
+
+@keyframes scrollLeft{
+from{transform:translateX(0);}
+to{transform:translateX(-100%);}
 }
 
 footer{
@@ -163,16 +214,16 @@ Principal Investigator: Dr. Harshit Kumar Soni
 <h3>Dr. Harshit Kumar Soni</h3>
 
 <p>
-Head of Department  
-Department of Biotechnology  
-Government PG College Satna, India
+Head of Department<br>
+Department of Biotechnology<br>
+Government PG College Satna, India<br><br>
 
-Assistant Professor  
-Department of Zoology  
-Government PG College Satna, India
+Assistant Professor<br>
+Department of Zoology<br>
+Government PG College Satna, India<br><br>
 
-Co-ordinator
-Incubation Center
+Coordinator<br>
+Incubation Center<br>
 Government PG College Satna, India
 </p>
 
@@ -183,9 +234,12 @@ computational oncology and AI-driven biomedical research.
 
 <p>
 
-ORCID:
+<a href="https://scholar.google.com/citations?user=JZeGg2EAAAAJ" target="_blank">
+Google Scholar
+</a>
+|
 <a href="https://orcid.org/0000-0002-6165-9154" target="_blank">
-0000-0002-6165-9154
+ORCID
 </a>
 
 </p>
@@ -197,31 +251,45 @@ ORCID:
 </section>
 
 
-
 <section class="container">
 
-<h2>Research Areas</h2>
+<h2>Research Snapshot</h2>
 
 <div class="grid">
 
-<div class="card">
+<div class="card fade-in">
 <h3>Cancer Genomics</h3>
-<p>Multi-omics analysis for cancer biomarker discovery.</p>
+<p>Multi-omics integration to identify cancer biomarkers and regulatory gene networks.</p>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Cytogenetics</h3>
-<p>Chromosomal instability and genome alterations in cancer.</p>
+<p>Chromosomal instability and environmental mutagenesis in cancer development.</p>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>Computational Drug Discovery</h3>
-<p>Molecular docking and simulation approaches.</p>
+<p>Structure-based drug discovery using docking and molecular dynamics.</p>
 </div>
 
-<div class="card">
+<div class="card fade-in">
 <h3>AI in Cancer Biology</h3>
-<p>Machine learning approaches for disease prediction.</p>
+<p>Machine learning approaches for disease prediction and biomarker discovery.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="scroll-box">
+
+<div class="scroll-text">
+
+Latest Publication — Soni HK (2026): Molecular dissection of glioblastoma: Identification of prognostic hub genes through integrated bioinformatics analysis. International Journal of Molecular and Immuno Oncology.
+
 </div>
 
 </div>
