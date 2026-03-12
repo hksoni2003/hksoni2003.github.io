@@ -78,15 +78,20 @@ nav a:hover{
 /* PROFILE SECTION */
 
 .profile{
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
-    align-items:center;
+display:flex;
+gap:40px;
+align-items:flex-start;
+max-width:900px;
 }
 
 .profile img{
-    width:200px;
-    border-radius:8px;
+width:220px;
+border-radius:8px;
+flex-shrink:0;
+}
+
+.profile-info{
+max-width:600px;
 }
 
 /* FOOTER */
