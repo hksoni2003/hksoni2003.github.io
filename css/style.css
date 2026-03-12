@@ -1,9 +1,12 @@
+/* GLOBAL */
+
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 background:#f5f5f5;
 line-height:1.6;
 }
+
 
 /* HERO HEADER */
 
@@ -45,6 +48,7 @@ font-size:20px;
 margin-top:10px;
 }
 
+
 /* NAVIGATION */
 
 nav{
@@ -64,13 +68,15 @@ nav a:hover{
 text-decoration:underline;
 }
 
-/* PAGE CONTENT */
+
+/* PAGE CONTAINER */
 
 .container{
 max-width:1100px;
 margin:auto;
 padding:40px;
 }
+
 
 /* GRID LAYOUT */
 
@@ -80,6 +86,7 @@ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 width:100%;
 }
+
 
 /* CARD DESIGN */
 
@@ -98,6 +105,11 @@ transform:translateY(-6px);
 width:100%;
 border-radius:6px;
 }
+
+.card h3{
+margin-top:0;
+}
+
 
 /* PROFILE SECTION */
 
@@ -119,6 +131,7 @@ flex-shrink:0;
 max-width:650px;
 }
 
+
 /* RESEARCH SNAPSHOT ANIMATION */
 
 .fade-in{
@@ -137,6 +150,7 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
 
 /* SCROLLING PUBLICATION */
 
@@ -159,6 +173,15 @@ from{transform:translateX(0);}
 to{transform:translateX(-100%);}
 }
 
+
+/* RESEARCH DIAGRAM */
+
+.diagram{
+width:100%;
+margin-top:30px;
+}
+
+
 /* FOOTER */
 
 footer{
@@ -168,22 +191,26 @@ text-align:center;
 padding:20px;
 }
 
+
+/* ============================= */
 /* MOBILE RESPONSIVE DESIGN */
+/* ============================= */
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
-.grid{
-grid-template-columns:1fr;
+.hero h1{
+font-size:28px;
 }
 
-.card img{
-width:100%;
-height:auto;
+.hero p{
+font-size:16px;
 }
 
+.container{
+padding:25px;
 }
 
-/* stack profile vertically on mobile */
+/* Stack PI profile vertically */
 
 .profile{
 flex-direction:column;
@@ -195,42 +222,17 @@ text-align:center;
 width:180px;
 }
 
-/* navigation spacing */
-
-nav a{
-display:inline-block;
-margin:8px;
-}
-
-/* container padding */
-
-.container{
-padding:25px;
-}
-
-/* grid becomes single column */
+/* Grid becomes single column */
 
 .grid{
 grid-template-columns:1fr;
 }
 
-}
+/* Navigation spacing */
 
-.diagram{
-width:100%;
-overflow-x:auto;
-margin-top:30px;
-}
-
-
-.card h3{
-margin-top:0;
-}
-
-@media (max-width:768px){
-
-.container{
-padding:25px;
+nav a{
+display:inline-block;
+margin:8px;
 }
 
 .card{
