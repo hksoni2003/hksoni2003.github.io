@@ -76,8 +76,9 @@ padding:40px;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
+width:100%;
 }
 
 /* CARD DESIGN */
@@ -169,14 +170,17 @@ padding:20px;
 
 /* MOBILE RESPONSIVE DESIGN */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-.hero h1{
-font-size:28px;
+.grid{
+grid-template-columns:1fr;
 }
 
-.hero p{
-font-size:16px;
+.card img{
+width:100%;
+height:auto;
+}
+
 }
 
 /* stack profile vertically on mobile */
