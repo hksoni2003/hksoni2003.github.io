@@ -9,7 +9,61 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<style>
+
+/* MEDIA NEWS CAROUSEL */
+
+.news-container{
+overflow-x:auto;
+display:flex;
+gap:25px;
+padding-top:20px;
+scroll-snap-type:x mandatory;
+}
+
+.news-card{
+min-width:320px;
+background:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+border-radius:8px;
+scroll-snap-align:start;
+transition:transform 0.3s;
+}
+
+.news-card:hover{
+transform:translateY(-6px);
+}
+
+.news-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px 8px 0 0;
+}
+
+.news-content{
+padding:15px;
+font-size:14px;
+}
+
+.news-content h3{
+margin-top:0;
+font-size:16px;
+}
+
+.news-container::-webkit-scrollbar{
+height:8px;
+}
+
+.news-container::-webkit-scrollbar-thumb{
+background:#0b3d5c;
+border-radius:4px;
+}
+
+</style>
+
 </head>
+
 
 <body>
 
@@ -46,6 +100,8 @@ Principal Investigator: Dr. Harshit Kumar Soni
 
 </nav>
 
+
+<!-- PI SECTION -->
 
 <section class="container">
 
@@ -101,6 +157,7 @@ ORCID
 </section>
 
 
+<!-- RESEARCH SNAPSHOT -->
 
 <section class="container">
 
@@ -110,22 +167,22 @@ ORCID
 
 <div class="card fade-in">
 <h3>Cancer Genomics</h3>
-<p>Multi-omics integration to identify cancer biomarkers and regulatory gene networks.</p>
+<p>Multi-omics integration for cancer biomarker discovery.</p>
 </div>
 
 <div class="card fade-in">
 <h3>Cytogenetics</h3>
-<p>Chromosomal instability and environmental mutagenesis in cancer development.</p>
+<p>Chromosomal instability and genome alterations in cancer.</p>
 </div>
 
 <div class="card fade-in">
 <h3>Computational Drug Discovery</h3>
-<p>Structure-based drug discovery using docking and molecular dynamics.</p>
+<p>Molecular docking and simulation based drug discovery.</p>
 </div>
 
 <div class="card fade-in">
 <h3>AI in Cancer Biology</h3>
-<p>Machine learning approaches for disease prediction and biomarker discovery.</p>
+<p>Machine learning approaches for cancer prediction and biomarker discovery.</p>
 </div>
 
 </div>
@@ -133,6 +190,7 @@ ORCID
 </section>
 
 
+<!-- PUBLICATION SCROLL -->
 
 <section>
 
@@ -148,25 +206,130 @@ Latest Publication — Soni HK (2026): Molecular dissection of glioblastoma: Ide
 
 </section>
 
+
+<!-- MEDIA COVERAGE -->
+
 <section class="container">
 
 <h2>Media Coverage</h2>
 
-<div class="grid">
+<div class="news-container">
 
-<div class="card">
+<a href="images/Bhaskar_1.jpeg" target="_blank">
 
-<img src="images/media_glioblastoma_news.jpg.jpeg" class="media-img">
+<div class="news-card">
+
+<img src="images/Bhaskar_1.jpeg">
+
+<div class="news-content">
+
+<h3>Dainik Bhaskar</h3>
 
 <p>
-News coverage highlighting research on glioblastoma and identification of prognostic hub genes through integrated bioinformatics analysis.
+Discovery of ancient Proboscidean fossil remains in Sidhi region.
+Research highlights geological and paleontological importance.
 </p>
 
 </div>
 
 </div>
 
+</a>
+
+
+<a href="images/bhaskar2.jpeg" target="_blank">
+
+<div class="news-card">
+
+<img src="images/bhaskar2.jpeg">
+
+<div class="news-content">
+
+<h3>Dainik Bhaskar Coverage</h3>
+
+<p>
+Scientific investigation underway to confirm fossil lineage
+using advanced geological and isotopic analysis.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+
+<a href="images/deshbandhu.jpeg" target="_blank">
+
+<div class="news-card">
+
+<img src="images/deshbandhu.jpeg">
+
+<div class="news-content">
+
+<h3>Deshbandhu</h3>
+
+<p>
+Research team from Satna investigating ancient biodiversity
+and paleontological evidence from central India.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+
+<a href="images/Naidunia.jpeg" target="_blank">
+
+<div class="news-card">
+
+<img src="images/Naidunia.jpeg">
+
+<div class="news-content">
+
+<h3>Naidunia</h3>
+
+<p>
+Prehistoric fossil findings highlight geological significance
+of the Son river valley region.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+
+<a href="images/Star_samachar.jpeg" target="_blank">
+
+<div class="news-card">
+
+<img src="images/Star_samachar.jpeg">
+
+<div class="news-content">
+
+<h3>Star Samachar</h3>
+
+<p>
+Preliminary findings suggest fossils may date back
+millions of years, indicating extinct elephant ancestors.
+</p>
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
 </section>
+
+
+<!-- LAB ACTIVITIES -->
 
 <section class="container">
 
@@ -176,25 +339,6 @@ News coverage highlighting research on glioblastoma and identification of progno
 
 <div class="card">
 <img src="images/IMG-20170923-WA0002.jpg">
-<section class="container">
-
-<h2>Media Coverage</h2>
-
-<div class="media-grid">
-
-<img src="images/Bhaskar_1.jpeg" alt="Dainik Bhaskar coverage">
-
-<img src="images/bhaskar2.jpeg" alt="Bhaskar news coverage">
-
-<img src="images/deshbandhu.jpeg" alt="Deshbandhu newspaper coverage">
-
-<img src="images/Naidunia.jpeg" alt="Naidunia newspaper coverage">
-
-<img src="images/Star_samachar.jpeg" alt="Star Samachar coverage">
-
-</div>
-
-</section>
 <p>Academic interaction</p>
 </div>
 
@@ -213,7 +357,6 @@ News coverage highlighting research on glioblastoma and identification of progno
 </section>
 
 
-
 <footer>
 
 <p>
@@ -223,4 +366,5 @@ News coverage highlighting research on glioblastoma and identification of progno
 </footer>
 
 </body>
+
 </html>
